@@ -5,7 +5,7 @@
 ## Requirements
 
 * Thymeleaf 3.x
-* HTML template mode
+* Only the HTML template mode is supported
 
 ## Example
 
