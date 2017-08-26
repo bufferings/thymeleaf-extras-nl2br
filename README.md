@@ -1,6 +1,6 @@
 # thymeleaf-extras-nl2br
 
-`Nl2brDialect` enables you to use `nl2br:text` attibute. With this attribute, HTML line breaks(`<br />`) are inserted before newlines. But the HTML tags are escaped before the process.
+`Nl2brDialect` enables you to use `nl2br:text` attibute. With this attribute, HTML line breaks(`<br />`) are inserted before newlines. But please don't worry the HTML tags are escaped before the process:)
 
 ## Requirements
 
@@ -32,7 +32,7 @@ Data:
 
 Result:
 
-![Example Image](./doc/example.png)
+![Example Image](https://github.com/bufferings/thymeleaf-extras-nl2br/blob/master/doc/example.png)
 
 ## Setup
 
