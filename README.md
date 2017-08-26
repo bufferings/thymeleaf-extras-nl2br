@@ -80,3 +80,11 @@ It's good to add `xmlns:nl2br` to stop IDE warning:
       xmlns:nl2br="https://github.com/bufferings/thymeleaf-extras-nl2br">
 <head>
 ```
+
+## Sample Project
+
+https://github.com/bufferings/thymeleafexample-nl2br
+
+## Release Notes
+
+* 2017-08-26(SAT) 1.0.0 Release
