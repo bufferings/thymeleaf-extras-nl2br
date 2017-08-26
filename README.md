@@ -4,7 +4,7 @@
 
 ## Requirements
 
-* Thymeleaf3.x
+* Thymeleaf 3.x
 * HTML template mode
 
 ## Example
