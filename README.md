@@ -1,2 +1,2 @@
 # thymeleaf-nl2br
-Thymelaef dialect for new line to &lt;br>
+Thymeleaf dialect for new line to &lt;br>
