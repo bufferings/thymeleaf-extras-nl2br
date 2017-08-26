@@ -9,6 +9,10 @@
 
 ## Example
 
+Example Project (with Spring Boot)
+
+https://github.com/bufferings/thymeleafexample-nl2br
+
 Template:
 
 ```
@@ -80,10 +84,6 @@ It's good to add `xmlns:nl2br` to stop IDE warning:
       xmlns:nl2br="https://github.com/bufferings/thymeleaf-extras-nl2br">
 <head>
 ```
-
-## Sample Project
-
-https://github.com/bufferings/thymeleafexample-nl2br
 
 ## Release Notes
 
