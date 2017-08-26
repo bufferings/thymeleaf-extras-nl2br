@@ -16,6 +16,7 @@
     <maven.compile.target>1.6</maven.compile.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <thymeleaf.version>3.0.7.RELEASE</thymeleaf.version>
+    <junit.version>4.12</junit.version>
   </properties>
 
   <dependencies>
@@ -25,6 +26,13 @@
       <version>${thymeleaf.version}</version>
       <scope>compile</scope>
       <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
