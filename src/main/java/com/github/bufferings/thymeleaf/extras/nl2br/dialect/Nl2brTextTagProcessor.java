@@ -10,6 +10,8 @@ import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.util.Validate;
 import org.unbescape.html.HtmlEscape;
 
+import java.util.regex.Pattern;
+
 /**
  * Inserts HTML line breaks(&lt;br /&gt;) before all newlines in a string after escaping HTML.
  * <p>
@@ -22,6 +24,8 @@ public final class Nl2brTextTagProcessor extends AbstractStandardExpressionAttri
   public static final int PRECEDENCE = 1300;
 
   public static final String ATTR_NAME = "text";
+
+  private static final Pattern NEW_LINE_PATTERN = Pattern.compile("(\r\n|\n)");
 
   public Nl2brTextTagProcessor(final TemplateMode templateMode, final String dialectPrefix) {
     super(templateMode, dialectPrefix, ATTR_NAME, PRECEDENCE, true);
@@ -49,6 +53,6 @@ public final class Nl2brTextTagProcessor extends AbstractStandardExpressionAttri
 
   // VisibleForTesting
   static String nl2br(final String input) {
-    return input.replaceAll("(\r\n|\n)", "<br />$1");
+    return NEW_LINE_PATTERN.matcher(input).replaceAll("<br />$1");
   }
 }
