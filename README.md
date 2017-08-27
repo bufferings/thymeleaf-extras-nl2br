@@ -1,5 +1,7 @@
 # thymeleaf-extras-nl2br
 
+[![Build Status](https://travis-ci.org/bufferings/thymeleaf-extras-nl2br.svg?branch=master)](https://travis-ci.org/bufferings/thymeleaf-extras-nl2br)
+
 `Nl2brDialect` enables you to use `nl2br:text` attibute. With this attribute, HTML line breaks(`<br />`) are inserted before newlines. But please don't worry the HTML tags are escaped before the process:)
 
 ## Requirements
