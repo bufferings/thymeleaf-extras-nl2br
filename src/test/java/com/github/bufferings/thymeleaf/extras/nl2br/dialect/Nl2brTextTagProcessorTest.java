@@ -3,12 +3,13 @@ package com.github.bufferings.thymeleaf.extras.nl2br.dialect;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThat;
 
 public class Nl2brTextTagProcessorTest {
 
   @Test
-  public void nl2br() throws Exception {
+  public void nl2br() {
     String actual;
 
     // \n
@@ -34,7 +35,7 @@ public class Nl2brTextTagProcessorTest {
   }
 
   @Test
-  public void produceEscapedOutput() throws Exception {
+  public void produceEscapedOutput() {
     String actual;
 
     // br tag is added before \n and \r\n
@@ -44,6 +45,21 @@ public class Nl2brTextTagProcessorTest {
     // HTML tag is escaped
     actual = Nl2brTextTagProcessor.produceEscapedOutput("<br>line1\nline2\r\n");
     assertThat(actual, is("&lt;br&gt;line1<br />\nline2<br />\r\n"));
+  }
+
+  @Test
+  public void noNewLineAndEscapeTarget() {
+    String input;
+    String actual;
+
+    input = "";
+    actual = Nl2brTextTagProcessor.produceEscapedOutput(input);
+    assertSame(input, actual);
+
+    input = "abc";
+    actual = Nl2brTextTagProcessor.produceEscapedOutput(input);
+    assertSame(input, actual);
+
   }
 
 }
