@@ -1,12 +1,10 @@
 package com.github.bufferings.thymeleaf.extras.nl2br.dialect;
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 import org.thymeleaf.dialect.AbstractProcessorDialect;
 import org.thymeleaf.processor.IProcessor;
-import org.thymeleaf.standard.processor.StandardXmlNsTagProcessor;
 import org.thymeleaf.templatemode.TemplateMode;
 
 public class Nl2brDialect extends AbstractProcessorDialect {
