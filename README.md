@@ -90,5 +90,5 @@ It's good to add `xmlns:nl2br` to stop IDE warning:
 ## Release Notes
 
 * 2017-09-10(SUN) 1.0.1 Release
-  * Improve the logic
+  * Polish the source code
 * 2017-08-26(SAT) 1.0.0 Release
