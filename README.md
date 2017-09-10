@@ -48,7 +48,7 @@ Result:
 <dependency>
   <groupId>com.github.bufferings</groupId>
   <artifactId>thymeleaf-extras-nl2br</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 
