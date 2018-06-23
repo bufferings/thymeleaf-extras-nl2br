@@ -7,7 +7,7 @@
   <groupId>com.github.bufferings</groupId>
   <artifactId>thymeleaf-extras-nl2br</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2</version>
   <name>${project.groupId}:${project.artifactId}</name>
   <description>Thymeleaf dialect to add br tags before newlines</description>
   <url>http://github.com/bufferings/thymeleaf-extras-nl2br</url>
@@ -39,7 +39,7 @@
     <maven.compile.source>1.6</maven.compile.source>
     <maven.compile.target>1.6</maven.compile.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <thymeleaf.version>3.0.7.RELEASE</thymeleaf.version>
+    <thymeleaf.version>3.0.9.RELEASE</thymeleaf.version>
     <junit.version>4.12</junit.version>
   </properties>
 

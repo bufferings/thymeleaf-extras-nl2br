@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/bufferings/thymeleaf-extras-nl2br.svg?branch=master)](https://travis-ci.org/bufferings/thymeleaf-extras-nl2br)
 
-`Nl2brDialect` enables you to use `nl2br:text` attibute. With this attribute, HTML line breaks(`<br />`) are inserted before newlines. But please don't worry the HTML tags are escaped before the process:)
+`Nl2brDialect` enables you to use `nl2br:text` attribute. With this attribute, HTML line breaks(`<br />`) are inserted before newlines. But please don't worry the HTML tags are escaped before the process:)
 
 ## Requirements
 
@@ -48,7 +48,7 @@ Result:
 <dependency>
   <groupId>com.github.bufferings</groupId>
   <artifactId>thymeleaf-extras-nl2br</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 
@@ -77,7 +77,7 @@ You can use `nl2br:text` like `th:text`. All the HTML tags are escaped before ad
 <p nl2br:text="${sample}">Hello!</p>
 ```
 
-It's good to add `xmlns:nl2br` to stop IDE warning:
+It's good to add `xmlns:nl2br` to stop IDE warning, and it's removed after processing from the version 1.0.2:
 
 ```
 <!DOCTYPE html>
@@ -89,6 +89,8 @@ It's good to add `xmlns:nl2br` to stop IDE warning:
 
 ## Release Notes
 
+* 2018-06-23(SAT) 1.0.2 Release
+  * Change to remove "xmlns:nl2br" attribute after processing.
 * 2017-09-10(SUN) 1.0.1 Release
   * Polish the source code
 * 2017-08-26(SAT) 1.0.0 Release

@@ -2,6 +2,7 @@ package com.github.bufferings.thymeleaf.extras.nl2br.dialect;
 
 import org.thymeleaf.dialect.AbstractProcessorDialect;
 import org.thymeleaf.processor.IProcessor;
+import org.thymeleaf.standard.processor.StandardXmlNsTagProcessor;
 import org.thymeleaf.templatemode.TemplateMode;
 
 import java.util.LinkedHashSet;
@@ -22,6 +23,7 @@ public class Nl2brDialect extends AbstractProcessorDialect {
   public Set<IProcessor> getProcessors(String dialectPrefix) {
     final Set<IProcessor> processors = new LinkedHashSet<IProcessor>();
     processors.add(new Nl2brTextTagProcessor(TemplateMode.HTML, dialectPrefix));
+    processors.add(new StandardXmlNsTagProcessor(TemplateMode.HTML, dialectPrefix));
     return processors;
   }
 }
